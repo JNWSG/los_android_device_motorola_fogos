@@ -39,3 +39,4 @@ VENDOR_SECURITY_PATCH := 2024-11-01
 
 # inherit from the proprietary version
 include vendor/motorola/fogos/BoardConfigVendor.mk
+include hardware/motorola/dolby/BoardConfigVendor.mk
