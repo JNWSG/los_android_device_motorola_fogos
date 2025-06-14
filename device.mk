@@ -51,7 +51,7 @@ PRODUCT_PACKAGES += \
     libgui_shim_vendor
 
 # Dolby
-$(call inherit-product, hardware/motorola/dolby/setup.mk)
+$(call inherit-product, hardware/motorola/dolby/dolby.mk)
 
 # Fingerprint
 PRODUCT_PACKAGES += \
