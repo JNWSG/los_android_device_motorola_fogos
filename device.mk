@@ -51,7 +51,7 @@ PRODUCT_PACKAGES += \
     libgui_shim_vendor
 
 # Dolby
-$(call inherit-product, hardware/motorola/dolby/dolby.mk)
+$(call inherit-product, hardware/motorola/dolby/setup.mk)
 
 # Fingerprint
 PRODUCT_PACKAGES += \
@@ -110,3 +110,4 @@ $(call soong_config_set,power_libperfmgr,mode_extension_lib,//$(LOCAL_PATH):libp
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/motorola/fogos/fogos-vendor.mk)
+
