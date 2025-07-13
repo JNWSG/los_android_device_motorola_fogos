@@ -27,3 +27,13 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="fogos_g-user 14 U1UGS34M.23-82-2-6 0b9749 release-keys" \
     BuildFingerprint=motorola/fogos_g/fogos:11/U1UGS34.23-82-2-6/e21904:user/release-keys \
     DeviceProduct=fogos_g
+
+# Build stuff
+MIST_BUILD_TYPE := UNOFFICIAL
+MISTOS_MAINTAINER=jinwoo099
+TARGET_ENABLE_BLUR := true
+WITH_GMS := true
+TARGET_BOOT_ANIMATION_RES := 720
+TARGET_BUILD_APERTURE_CAMERA := true
+TARGET_DISABLE_EPPE := true
+
