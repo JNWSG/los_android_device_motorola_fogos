@@ -29,11 +29,15 @@ $(call inherit-product, device/motorola/sm6375-common/common.mk)
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworksResFogos \
+    FrameworksResDeviceXT2363-8 \
+    FrameworksResDeviceXT2363-9 \
     LineageSystemUIFogos \
     ProductFrameworksResFogos \
     SettingsProviderResFogos \
     SystemUIResFogos \
-    WifiResFogos
+    WifiResFogos \
+    WifiResDeviceXT2363-8 \
+    WifiResDeviceXT2363-9
 
 # Audio
 PRODUCT_COPY_FILES += \
@@ -94,6 +98,11 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.xml \
     frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.xml \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml
+
+# Properties
+PRODUCT_PACKAGES += \
+    hardware.sku.XT2363-8.prop \
+    hardware.sku.XT2363-9.prop
 
 # Sensors
 PRODUCT_COPY_FILES += \
