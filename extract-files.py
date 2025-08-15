@@ -39,6 +39,10 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libgui_shim_vendor.so'),
     'vendor/lib64/sensors.moto.so': blob_fixup()
          .add_needed('libbase_shim.so'),
+    'vendor/lib64/camera/components/com.vidhance.node.ica.so': blob_fixup()
+        .replace_needed('libui.so', 'libui-v34.so'),
+    'vendor/lib64/camera/components/com.vidhance.node.processing.so': blob_fixup()
+        .replace_needed('libui.so', 'libui-v34.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
