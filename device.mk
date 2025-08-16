@@ -53,6 +53,9 @@ PRODUCT_PACKAGES += \
 # Dolby
 $(call inherit-product, hardware/motorola/dolby/setup.mk)
 
+# ViperFX
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.fogos \
