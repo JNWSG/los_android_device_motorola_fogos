@@ -54,7 +54,7 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, hardware/motorola/dolby/setup.mk)
 
 # ViperFX
-$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+$(call inherit-product, hardware/motorola/ViPER4AndroidFX/setup.mk)
 
 # Fingerprint
 PRODUCT_PACKAGES += \
